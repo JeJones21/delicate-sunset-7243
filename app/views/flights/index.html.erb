@@ -6,6 +6,7 @@
       <h3>Passengers:</h3>
         <% flight.passengers.each do |passenger| %>
           <%= passenger.name %>
-        <% end %>
+          <%= link_to "Remove #{passenger.name}", flight_excursion_path(flight, passenger), method: :delete, local: true %>
+    <% end %>
   </section>
 <% end %>

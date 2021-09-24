@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  resources :flights
+  resources :flights, only: [:index] do
+    resources :excursions, only: [:destroy]
+  end 
 end
