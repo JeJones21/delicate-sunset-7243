@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   resources :flights, only: [:index] do
     resources :excursions, only: [:destroy]
-  end 
+  end
+
+  resources :airlines, only: [:show]
 end

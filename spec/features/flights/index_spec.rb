@@ -12,7 +12,7 @@ RSpec.describe 'Flight#index' do
 
     @p1 = @f3.passengers.create!(name: 'JJ', age: 35)
     @p2 = @f3.passengers.create!(name: 'Jes Mae', age: 34)
-    @p3 = @f3.passengers.create!(name: 'Christian', age: 39)
+    @p3 = @f3.passengers.create!(name: 'Christian', age: 15)
 
     visit flights_path
   end
