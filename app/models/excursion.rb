@@ -1,4 +1,4 @@
-class FlightPassenger < ApplicationRecord
+class Excursion < ApplicationRecord
   belongs_to :flight
   belongs_to :passenger
 end
